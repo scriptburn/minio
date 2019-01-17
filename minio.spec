@@ -21,7 +21,7 @@ BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ## Go related tags.
 %define         gobuild(o:) go build -ldflags "${LDFLAGS:-}" %{?**};
 %define         gopath          %{_libdir}/golang
-%define         import_path     github.com/minio/minio
+%define         import_path     github.com/scriptburn/minio
 
 %description
 Minio is an object storage server released under Apache License v2.0.
